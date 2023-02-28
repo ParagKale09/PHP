@@ -86,11 +86,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
      <form action="/crud/adminlogin.php" method="post">
         <div class="form-group">
             <label for="username">Admin Username</label>
-            <input type="text" class="form-control" id="admin_username" name="admin_username" aria-describedby="emailHelp">           
+            <input type="text" class="form-control" id="admin_username" name="admin_username" aria-describedby="emailHelp" required/>           
         </div>
         <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" class="form-control" id="admin_pass" name="admin_pass">
+            <input type="password" class="form-control" id="admin_pass" name="admin_pass" required/> 
         </div>       
         <button type="submit" class="btn btn-primary">Admin Login</button>
      </form>
